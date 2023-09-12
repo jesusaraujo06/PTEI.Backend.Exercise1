@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProductManagement.Data.Context;
+using ProductManagement.Data.Implementation;
+using ProductManagement.Domain.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,9 @@ builder.Services.AddSwaggerGen();
 // Entity Framework
 string? productoConnection = builder.Configuration.GetConnectionString("ProductConnection");
 builder.Services.AddDbContext<ProductManagementDbContext>(options => options.UseSqlServer(productoConnection));
+
+// Repositories
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
