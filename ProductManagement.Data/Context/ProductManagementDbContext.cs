@@ -18,40 +18,50 @@ public class ProductManagementDbContext : DbContext
                     Id = 1,
                     Name = "Camisa de Python",
                     Description = "Camisa con estampado del logo de Python",
-                    Price = 19.99m,
-                    Stock = 100
+                    Price = 100000m,
+                    Stock = 100,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 },
                 new ProductEntity
                 {
                     Id = 2,
                     Name = "Camisa de JavaScript",
                     Description = "Camisa con estampado de código JavaScript",
-                    Price = 24.99m,
-                    Stock = 75
+                    Price = 120000m,
+                    Stock = 75,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 },
                 new ProductEntity
                 {
                     Id = 3,
                     Name = "Camisa de C#",
                     Description = "Camisa con estampado del logo de C#",
-                    Price = 21.99m,
-                    Stock = 80
+                    Price = 250000m,
+                    Stock = 80,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 },
                 new ProductEntity
                 {
                     Id = 4,
                     Name = "Camisa de Java",
                     Description = "Camisa con estampado del logo de Java",
-                    Price = 22.99m,
-                    Stock = 70
+                    Price = 50000m,
+                    Stock = 70,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 },
                 new ProductEntity
                 {
                     Id = 5,
                     Name = "Camisa de Angular",
                     Description = "Camisa con estampado del logo de Angular",
-                    Price = 18.99m,
-                    Stock = 90
+                    Price = 250000m,
+                    Stock = 90,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 }
             );
     }
