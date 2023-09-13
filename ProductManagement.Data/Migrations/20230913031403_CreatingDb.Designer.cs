@@ -12,7 +12,7 @@ using ProductManagement.Data.Context;
 namespace ProductManagement.Data.Migrations
 {
     [DbContext(typeof(ProductManagementDbContext))]
-    [Migration("20230912193217_CreatingDb")]
+    [Migration("20230913031403_CreatingDb")]
     partial class CreatingDb
     {
         /// <inheritdoc />
@@ -61,9 +61,9 @@ namespace ProductManagement.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6560),
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7192),
                             Description = "Camisa con estampado del logo de Python",
-                            ModificationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6604),
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7204),
                             Name = "Camisa de Python",
                             Price = 100000m,
                             Stock = 100
@@ -71,9 +71,9 @@ namespace ProductManagement.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6606),
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7207),
                             Description = "Camisa con estampado de código JavaScript",
-                            ModificationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6606),
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7208),
                             Name = "Camisa de JavaScript",
                             Price = 120000m,
                             Stock = 75
@@ -81,9 +81,9 @@ namespace ProductManagement.Data.Migrations
                         new
                         {
                             Id = 3,
-                            CreationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6608),
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7209),
                             Description = "Camisa con estampado del logo de C#",
-                            ModificationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6608),
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7210),
                             Name = "Camisa de C#",
                             Price = 250000m,
                             Stock = 80
@@ -91,9 +91,9 @@ namespace ProductManagement.Data.Migrations
                         new
                         {
                             Id = 4,
-                            CreationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6704),
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7212),
                             Description = "Camisa con estampado del logo de Java",
-                            ModificationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6705),
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7212),
                             Name = "Camisa de Java",
                             Price = 50000m,
                             Stock = 70
@@ -101,12 +101,22 @@ namespace ProductManagement.Data.Migrations
                         new
                         {
                             Id = 5,
-                            CreationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6706),
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7214),
                             Description = "Camisa con estampado del logo de Angular",
-                            ModificationDate = new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6706),
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7214),
                             Name = "Camisa de Angular",
                             Price = 250000m,
                             Stock = 90
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7216),
+                            Description = "Camisa con estampado del logo de Everest Intelligent",
+                            ModificationDate = new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7217),
+                            Name = "Camisa de Everest Intelligent",
+                            Price = 500000m,
+                            Stock = 5
                         });
                 });
 #pragma warning restore 612, 618

@@ -62,6 +62,16 @@ public class ProductManagementDbContext : DbContext
                     Stock = 90,
                     CreationDate = DateTime.Now,
                     ModificationDate = DateTime.Now
+                },
+                new ProductEntity
+                {
+                    Id = 6,
+                    Name = "Camisa de Everest Intelligent",
+                    Description = "Camisa con estampado del logo de Everest Intelligent",
+                    Price = 500000m,
+                    Stock = 5,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now
                 }
             );
     }

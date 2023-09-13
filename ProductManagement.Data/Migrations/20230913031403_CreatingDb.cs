@@ -36,11 +36,12 @@ namespace ProductManagement.Data.Migrations
                 columns: new[] { "Id", "CreationDate", "Description", "ModificationDate", "Name", "Price", "Stock" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6560), "Camisa con estampado del logo de Python", new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6604), "Camisa de Python", 100000m, 100 },
-                    { 2, new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6606), "Camisa con estampado de código JavaScript", new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6606), "Camisa de JavaScript", 120000m, 75 },
-                    { 3, new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6608), "Camisa con estampado del logo de C#", new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6608), "Camisa de C#", 250000m, 80 },
-                    { 4, new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6704), "Camisa con estampado del logo de Java", new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6705), "Camisa de Java", 50000m, 70 },
-                    { 5, new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6706), "Camisa con estampado del logo de Angular", new DateTime(2023, 9, 12, 14, 32, 17, 19, DateTimeKind.Local).AddTicks(6706), "Camisa de Angular", 250000m, 90 }
+                    { 1, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7192), "Camisa con estampado del logo de Python", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7204), "Camisa de Python", 100000m, 100 },
+                    { 2, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7207), "Camisa con estampado de código JavaScript", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7208), "Camisa de JavaScript", 120000m, 75 },
+                    { 3, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7209), "Camisa con estampado del logo de C#", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7210), "Camisa de C#", 250000m, 80 },
+                    { 4, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7212), "Camisa con estampado del logo de Java", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7212), "Camisa de Java", 50000m, 70 },
+                    { 5, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7214), "Camisa con estampado del logo de Angular", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7214), "Camisa de Angular", 250000m, 90 },
+                    { 6, new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7216), "Camisa con estampado del logo de Everest Intelligent", new DateTime(2023, 9, 12, 22, 14, 3, 63, DateTimeKind.Local).AddTicks(7217), "Camisa de Everest Intelligent", 500000m, 5 }
                 });
         }
 

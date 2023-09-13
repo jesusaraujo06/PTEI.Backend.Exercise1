@@ -16,51 +16,51 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("GetAll")]
-    public async Task<ActionResult> GetAll()
+    public async Task<IActionResult> GetAll()
     {
         var products = await ProductRepository.GetAll();
-        return Ok(products);
+        return products.ToActionResult();
     }
 
     [HttpGet("GetById/{id}")]
-    public async Task<ActionResult> GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
         var product = await ProductRepository.GetById(id);
-        return Ok(product);
+        return product.ToActionResult();
     }
 
     [HttpPost("Add")]
-    public async Task<ActionResult> Add(ProductEntity entity)
+    public async Task<IActionResult> Add(ProductEntity entity)
     {
-        await ProductRepository.Add(entity);
-        return Ok();
+        var add = await ProductRepository.Add(entity);
+        return add.ToActionResult();
     }
 
     [HttpPost("AddRange")]
-    public async Task<ActionResult> AddRange(List<ProductEntity> entities)
+    public async Task<IActionResult> AddRange(List<ProductEntity> entities)
     {
-        await ProductRepository.AddRange(entities);
-        return Ok();
+        var addRange = await ProductRepository.AddRange(entities);
+        return addRange.ToActionResult();
     }
 
     [HttpPut("Update")]
-    public async Task<ActionResult> Update(ProductEntity entity)
+    public async Task<IActionResult> Update(ProductEntity entity)
     {
-        await ProductRepository.Update(entity);
-        return Ok();
+        var update = await ProductRepository.Update(entity);
+        return update.ToActionResult();
     }
 
     [HttpPut("UpdateRange")]
-    public async Task<ActionResult> UpdateRange(List<ProductEntity> entities)
+    public async Task<IActionResult> UpdateRange(List<ProductEntity> entities)
     {
-        await ProductRepository.UpdateRange(entities);
-        return Ok();
+        var updateRange = await ProductRepository.UpdateRange(entities);
+        return updateRange.ToActionResult();
     }
 
     [HttpDelete("Delete")]
-    public async Task<ActionResult> Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        await ProductRepository.Remove(id);
-        return Ok();
+        var remove = await ProductRepository.Remove(id);
+        return remove.ToActionResult();
     }
 }
