@@ -1,5 +1,5 @@
 # **PTEI.Backend.Exercise1**
-
+## WEB API para operaciones CRUD de productos en una base de datos SQLServer
 ## Requisitos
 
 [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
@@ -32,11 +32,7 @@ Diríjase al proyecto ‘`ProductManagement.API`’, abra el archivo ‘`appsett
 
 Dentro de su Visual Studio diríjase al menu: 
 
-<aside>
-🔗 Herramientas → Administrador de paquetes Nuget → Consola del Administrador de paquetes
-
-</aside>
-
+🔗 Herramientas → Administrador de paquetes Nuget → Consola del Administrador de paquetes.
 
 Dentro de la consola del Administrador de paquetes, en el apartado de ‘Proyecto predeterminado’, elegir `ProductManagement.Data` y copiar el siguiente código en la consola:
 
@@ -53,7 +49,8 @@ Eso es todo, ya podemos ejecutar el proyecto `ProductManagement.API`
 ![Untitled](https://github.com/jesusaraujo06/PTEI.Backend.Exercise1/assets/72844628/0ef15222-93e3-4744-809f-b94ca0d7687b)
 
 
-### Prueba del endpoint: GetAll
+### Prueba del endpoint: `GetAll`
+Descripción del endpoint: Obtiene el listado completo de productos
 
 Request URL:
 
@@ -63,7 +60,7 @@ https://localhost:7023/api/Products/GetAll
 
 Response:
 
-```jsx
+```json
 {
   "success": true,
   "data": [
@@ -127,17 +124,15 @@ Response:
 }
 ```
 
-### Respuestas de la API unificadas
+### Consideraciones
+La solución esta creada de tal forma que:
+- **Respuestas de la API unificadas** Los endpoints de esta WEB API utilizan la misma logica de respuesta, lo cual hará que esta sea más facil de consumir por cualquier servicio propio o externo.
+- Implementa el patron de diseño Repository el cual encapsula el comportamiento de almacenamiento, obtención y búsqueda de datos.
+- Se utiliza un proyecto Domain para la lógica de negocio / empresarial.
+- Utiliza EntityFramework como ORM para el acceso a datos.
 
-Los endpoints de esta API Rest utilizan la misma logica de respuesta, lo cual hará que esta sea más facil de consumir por cualquier servicio propio o externo.
-
-### Pattern Repository
-
-Esta solución implementa el patron de diseño Repository el cual encapsula el comportamiento de almacenamiento, obtención y búsqueda de datos.
-
-### Domain
-
-Utilizamos un proyecto Domain para la lógica de negocio / empresarial.
+### Pendiente o por mejorar
+- Paginar los resultados de la WEB API.
 
 ## **Descripción de la prueba técnica**
 
