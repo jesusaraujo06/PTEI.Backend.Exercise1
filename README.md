@@ -128,7 +128,8 @@ Response:
 La solución esta creada de tal forma que:
 - **Respuestas de la API unificadas** Los endpoints de esta WEB API utilizan la misma logica de respuesta, lo cual hará que esta sea más facil de consumir por cualquier servicio propio o externo.
 - Implementa el patron de diseño Repository el cual encapsula el comportamiento de almacenamiento, obtención y búsqueda de datos.
-- Se utiliza un proyecto Domain para la lógica de negocio / empresarial.
+- Se abstrae la logica de negocio / empresarial en un proyecto Domain
+- Se utiliza la inyección de dependencias.
 - Utiliza EntityFramework como ORM para el acceso a datos.
 
 ### Pendiente o por mejorar
